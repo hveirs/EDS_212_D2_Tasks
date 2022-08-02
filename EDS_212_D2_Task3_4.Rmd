@@ -39,3 +39,26 @@ gt_prime <- deriv(gt, name = "t")
 gt_prime
 ```
 
+## Section 4
+
+Create a penguin scatterplot for bill length vs depth
+
+```{r}
+ggplot(penguins, aes(bill_length_mm, bill_depth_mm)) + 
+  geom_point(aes(color = species)) + 
+  labs(x = "Bill Length (mm)", 
+       y = "Bill Depth (mm)", 
+       title = "Penguin Bill Depth as a Function of Bill Length")
+
+```
+
+Now make a jitterplot of flipper length by species 
+
+```{r}
+ggplot(penguins, aes(species, flipper_length_mm)) + 
+  geom_jitter(aes(color = species)) + 
+  labs(x = "Species",
+    y = "Flipper Length (mm)", 
+    title = "Flipper Length of Different Species")
+```
+
