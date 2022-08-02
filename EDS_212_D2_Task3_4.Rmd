@@ -62,3 +62,4 @@ ggplot(penguins, aes(species, flipper_length_mm)) +
     title = "Flipper Length of Different Species")
 ```
 
+Remember to stage, commit, and push your files!
