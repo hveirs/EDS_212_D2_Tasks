@@ -1,0 +1,23 @@
+---
+title: "Section 3 and 4"
+author: "Hailey Veirs"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(palmerpenguins)
+```
+
+### Section 3 Tasks: 
+Find the derivatives of the following:
+$f(x)=x^2$ at x=3
+$P(a)=2(3a+2)^4−5$ at a=1.2
+$g(t)=−4t/(t2+1)^3$ at t=0
+
+```{r}
+
+```
+
