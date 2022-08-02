@@ -18,6 +18,24 @@ $P(a)=2(3a+2)^4−5$ at a=1.2
 $g(t)=−4t/(t2+1)^3$ at t=0
 
 ```{r}
+# First name the expressions
+fx <- expression(x ^ 2)
 
+fx_prime <- deriv(fx, name = "x")
+fx_prime
+```
+
+```{r}
+Pa <- expression(2 * (3*a + 2) ^ 4 - 5)
+
+Pa_prime <- deriv(Pa, name = "a")
+Pa_prime
+```
+
+```{r}
+gt <- expression((-4*t)/(t^2 + 1)^3)
+
+gt_prime <- deriv(gt, name = "t")
+gt_prime
 ```
 
